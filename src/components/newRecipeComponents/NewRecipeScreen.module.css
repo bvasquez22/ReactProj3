@@ -1,0 +1,101 @@
+h1 {
+    color: #2D3047;
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: fit-content;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    border: 1px solid #585d89;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+form input[type=radio] {
+    height: 35px;
+    width: 35px;
+    border: 3px;
+}
+
+form label {
+    font-size: 20px;
+}
+
+form h5 {
+    color: #2D3047;
+}
+
+textarea {
+    width: 100%;
+}
+
+.input_container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.input_container input {
+    width: 100%;
+}
+
+.radio_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.radio_container span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ingredients_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+
+ul {
+    width: 50%;
+}
+
+button {
+    height: 45px;
+    min-width: 125px;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+.ingredients_btn {
+    background-color: #FF9B71;
+    color: #E0F2E9;
+}
+
+.submit_btn {
+    background-color: #1B998B;
+    color: #E0F2E9;
+}

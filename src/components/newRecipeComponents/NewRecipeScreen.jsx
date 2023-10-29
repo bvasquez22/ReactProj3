@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Formik } from "formik";
+import styles from "./NewRecipeScreen.module.css";
 
 const NewRecipeScreen = () => {
   const [ingredients, setIngredients] = useState([]);
@@ -42,9 +43,9 @@ const NewRecipeScreen = () => {
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
           <form onSubmit={handleSubmit}>
-            <div>
+            <div className={styles.input_container}>
               <input
-                placeholder="Enter your recipe's name here..."
+                placeholder="Enter your recipe's name"
                 value={values.recipeName}
                 onChange={handleChange}
                 name="recipeName"
@@ -56,7 +57,7 @@ const NewRecipeScreen = () => {
                 name="imageURL"
               />
             </div>
-            <div>
+            <div className={styles.radio_container}>
               <span>
                 <input
                   type="radio"
@@ -85,7 +86,7 @@ const NewRecipeScreen = () => {
                 <h5>Drink</h5>
               </span>
             </div>
-            <div>
+            <div className={styles.input_container}>
               <input
                 placeholder="Prep Time"
                 value={values.prepTime}
@@ -106,8 +107,8 @@ const NewRecipeScreen = () => {
               />
             </div>
             <h3>Ingredients</h3>
-            <div>
-              <div>
+            <div className={styles.input_container}>
+              <div className={styles.ingredients_container}>
                 <input
                   placeholder="Ingredient"
                   value={name}
@@ -119,11 +120,11 @@ const NewRecipeScreen = () => {
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
-              <ul><ingredientList/></ul>
+              <ul>{ingredientList}</ul>
             </div>
             <button
               type="button"
-              className="ingredient-btn"
+              className={styles.ingredients_btn}
               onClick={addIngredients}
             >
               Add Another
@@ -135,7 +136,7 @@ const NewRecipeScreen = () => {
               onChange={handleChange}
               name="instructions"
             />
-            <button type="submit" className="submit-btn">
+            <button type="submit" className={styles.submit_btn}>
               Submit
             </button>
           </form>
