@@ -41,7 +41,7 @@ const NewRecipeScreen = () => {
 
   return (
     <section>
-      <h1>Tell us about your Recipe!</h1>
+      <h1 className={styles.newRecipe_title}>Tell us about your Recipe!</h1>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
           <form onSubmit={handleSubmit}>
