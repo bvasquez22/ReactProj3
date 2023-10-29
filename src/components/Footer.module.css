@@ -1,0 +1,33 @@
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #2D3047;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    /* position: absolute;
+    bottom: 0; */
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+h5 {
+    font-size: 20px;
+    color: #E0F2E9;
+}
+
+.social_icons {
+    display: flex;
+    gap: 5px;
+}
+
+.social_icons_container {
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   background-color: #1B998B;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
